@@ -30,7 +30,7 @@ public class Main {
         } else if (type.equals("/")) {
             result = firstNumber / secondNumber;
         } else {
-            System.out.println("사칙연산이 잘못되었습니다");
+            System.out.println("잘못되었습니다");
             return;
         }
         System.out.println("결과: " + result);
