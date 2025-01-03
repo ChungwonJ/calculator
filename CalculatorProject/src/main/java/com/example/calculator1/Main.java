@@ -38,7 +38,7 @@ public class Main {
             System.out.println("결과: " + result);
 
             sc.nextLine();
-            System.out.print("더 고고?: ");
+            System.out.print("exid를 입력하시면 종료됩니다: ");
             String go = sc.nextLine();
             if (go.equals("exid")) {
                 System.out.print("종료되었습니다");
