@@ -30,7 +30,12 @@ public class Main {
             } else if (type.equals("*")) {
                 result = firstNumber * secondNumber;
             } else if (type.equals("/")) {
-                result = firstNumber / secondNumber;
+                if (secondNumber == 0) {
+                    System.out.print("0으로 나눌수 없습니다");
+                    return;
+                } else {
+                    result = firstNumber / secondNumber;
+                }
             } else {
                 System.out.print("잘못되었습니다");
                 return;
