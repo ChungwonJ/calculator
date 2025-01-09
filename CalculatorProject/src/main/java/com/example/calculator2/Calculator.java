@@ -21,7 +21,7 @@ public class Calculator {
     }
 
     public ArrayList<Integer> getResults() {
-        return new ArrayList<>(results);
+        return results;
     }
 
     public void setFirstNumber(int firstNumber) {
