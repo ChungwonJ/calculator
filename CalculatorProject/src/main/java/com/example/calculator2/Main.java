@@ -35,7 +35,7 @@ public class Main {
             System.out.print("저장내용을 삭제하시겠습니까? y/n: ");
             String elimination = sc.nextLine();
             if (termination. equalsIgnoreCase("exit")) {
-                if (elimination.equals("y")) {
+                if (elimination.equalsIgnoreCase("y")) {
                     calculator.removeResult();
                 }
                 System.out.println("종료되었습니다");
