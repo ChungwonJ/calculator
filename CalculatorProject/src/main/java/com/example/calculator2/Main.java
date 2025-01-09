@@ -30,14 +30,17 @@ public class Main {
             System.out.println("결과: " + result);
 
             sc.nextLine();
-            System.out.print("exid를 입력하시면 종료됩니다: ");
-            String go = sc.nextLine();
-            if (go.equals("exid")) {
-                System.out.print("종료되었습니다");
-                break;
+            System.out.print("exit를 입력하시면 종료됩니다: ");
+            String termination = sc.nextLine();
+            System.out.print("저장내용을 삭제하시겠습니까? y/n: ");
+            String elimination = sc.nextLine();
+            if (termination.equals("exit")) {
+                if (elimination.equals("y")) {
+                    calculator.removeResult();
+                }
+                System.out.println("종료되었습니다");
+                System.out.println("현재 결과 리스트: " + calculator.getResults());
             }
-            calculator.removeResult();
-            System.out.println("현재 결과 리스트: " + calculator.results);
         }
     }
 }

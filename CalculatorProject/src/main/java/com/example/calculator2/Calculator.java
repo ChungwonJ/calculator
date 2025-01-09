@@ -3,7 +3,7 @@ package com.example.calculator2;
 import java.util.ArrayList;
 
 public class Calculator {
-    ArrayList<Integer> results = new ArrayList<>();
+    private ArrayList<Integer> results = new ArrayList<>();
     private int firstNumber;
     private String type;
     private int secondNumber;
@@ -18,6 +18,10 @@ public class Calculator {
 
     public int getSecondNumber() {
         return secondNumber;
+    }
+
+    public ArrayList<Integer> getResults() {
+        return new ArrayList<>(results);
     }
 
     public void setFirstNumber(int firstNumber) {
