@@ -8,10 +8,31 @@ public class Calculator {
     private String type;
     private int secondNumber;
 
-    public int calculate(int firstNumber, String type, int secondNumber) {
+    public int getFirstNumber() {
+        return firstNumber;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getSecondNumber() {
+        return secondNumber;
+    }
+
+    public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
+    }
+
+    public void setType(String type) {
         this.type = type;
+    }
+
+    public void setSecondNumber(int secondNumber) {
         this.secondNumber = secondNumber;
+    }
+
+    public int calculate(int firstNumber, String type, int secondNumber) {
         int result = 0;
 
         if (type.equals("+")) {
@@ -34,29 +55,6 @@ public class Calculator {
 
         results.add(result);
         return result;
-    }
-    public int getFirstNumber() {
-        return firstNumber;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public int getSecondNumber() {
-        return secondNumber;
-    }
-
-    public void getFirstNumber(int firstNumber) {
-        this.firstNumber = firstNumber;
-    }
-
-    public void getType(String type) {
-        this.type = type;
-    }
-
-    public void getSecondNumber(int secondNumber) {
-        this.secondNumber = secondNumber;
     }
 
     public void removeResult() {

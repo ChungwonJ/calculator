@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Boolean finish = true;
+        Calculator calculator = new Calculator();
 
         while (finish) {
             System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -20,7 +21,10 @@ public class Main {
             System.out.print("두 번째 숫자를 입력하세요: ");
             int secondNumber = sc.nextInt();
 
-            Calculator calculator = new Calculator();
+            calculator.setFirstNumber(firstNumber);
+            calculator.setType(type);
+            calculator.setSecondNumber(secondNumber);
+
             int result = calculator.calculate(firstNumber, type, secondNumber);
 
             System.out.println("결과: " + result);
